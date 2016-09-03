@@ -1,0 +1,46 @@
+/**
+ * Created by agomez40 on 03/09/2016.
+ */
+
+'use strict';
+
+var gulp = require('gulp');
+var connect = require('gulp-connect'); // Runs a local dev server
+var open = require('gulp-open'); // Open a URL in the default web browser
+
+var config = {
+    port: 9005,
+    devBaseUrl: 'http://localhost',
+    paths:{
+        html: './src/*.html',
+        dist: './dist'
+    }
+};
+
+// Start local development server
+gulp.task('connect', function(){
+   connect.server({
+       root: ['dist'],
+       port: config.port,
+       base: config.devBaseUrl,
+       livereload: true
+   });
+});
+
+gulp.task('open', ['connect'], function(){
+   gulp.src('dist/index.html')
+       .pipe(open({uri: config.devBaseUrl + ':' + config.port + '/'}));
+});
+
+gulp.task('html', function () {
+    gulp.src(config.paths.html)
+        .pipe(gulp.dest(config.path.dist))
+        .pipe(connect.reload());
+});
+
+gulp.task('watch', function () {
+    gulp.watch(config.paths.html, ['html']);
+});
+
+// Default dev task
+gulp.task('default', ['html', 'open', 'watch']);
