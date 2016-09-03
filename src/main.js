@@ -4,7 +4,9 @@
 
 // Define JQuery as global, required by bootstrap
 $ = jQuery = require('jquery');
+var React = require('react');
+var ReactDOM = require('react-dom');
 
-var App = console.log("Hello world from Browserify");
+var Home = require('./components/homePage');
 
-module.exports = App;
+ReactDOM.render(<Home />, document.getElementById('app'));
