@@ -1,0 +1,37 @@
+{
+  "name": "psadmin",
+  "version": "1.0.0",
+  "description": "Building Applications with React and Flux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agomez40/react-flux-sample.git"
+  },
+  "keywords": [
+    "React",
+    "Flux",
+    "Tutorial",
+    "Sample"
+  ],
+  "author": "Luis Alberto Gomez Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agomez40/react-flux-sample/issues"
+  },
+  "homepage": "https://github.com/agomez40/react-flux-sample#readme",
+  "dependencies": {
+    "flux": "^2.1.1",
+    "react": "^15.3.1",
+    "react-router": "^2.7.0"
+  },
+  "devDependencies": {
+    "gulp-eslint": "^3.0.1",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.3",
+    "jshint-stylish": "^2.2.1"
+  }
+}
