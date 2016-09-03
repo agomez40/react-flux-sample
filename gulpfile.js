@@ -11,7 +11,8 @@ var browserify = require('browserify'); // Bundles JS
 var reactify = require('reactify'); // Transforms React JSX to JS
 var source = require('vinyl-source-stream'); // Use conventional text streams with Gulp
 var concat = require('gulp-concat'); // Concatenates files
-
+var jshint = require('gulp-jshint');
+var jscs = require('gulp-jscs');
 
 
 var config = {
@@ -66,10 +67,17 @@ gulp.task('css', function(){
        .pipe(gulp.dest(config.paths.dist+'/css'));
 });
 
+gulp.task('style', function () {
+    return gulp.src(config.paths.js)
+        .pipe(jshint())
+        .pipe(jshint.reporter('jshint-stylish', {verbose: true}))
+        .pipe(jscs());
+});
+
 gulp.task('watch', function () {
     gulp.watch(config.paths.html, ['html']);
-    gulp.watch(config.paths.js, ['js']);
+    gulp.watch(config.paths.js, ['js', 'style']);
 });
 
 // Default dev task
-gulp.task('default', ['html','js', 'css', 'open', 'watch']);
+gulp.task('default', ['html','js', 'css','style', 'open', 'watch']);
