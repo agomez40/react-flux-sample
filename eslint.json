@@ -1,6 +1,12 @@
 {
-  "ecmaFeatures": {
-    "jsx": true
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
   },
   "env": {
     "browser": true,
