@@ -11,5 +11,6 @@
     <orderEntry type="library" name="node-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="gulp-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="browserify-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="psadmin node_modules" level="project" />
   </component>
 </module>
