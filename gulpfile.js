@@ -20,6 +20,7 @@ var config = {
     paths:{
         html: './src/*.html',
         dist: './dist',
+        images: './src/images/*',
         js: './src/**/*.js',
         mainJs: './src/main.js',
         css: [
@@ -66,6 +67,12 @@ gulp.task('css', function(){
        .pipe(gulp.dest(config.paths.dist+'/css'));
 });
 
+gulp.task('images', function(){
+    gulp.src(config.paths.images)
+        .pipe(gulp.dest(config.paths.dist+'/images'))
+        .pipe(connect.reload());
+});
+
 gulp.task('style', function () {
     return gulp.src(config.paths.js)
         .pipe(lint({configFile: 'eslint.json'}))
@@ -78,4 +85,4 @@ gulp.task('watch', function () {
 });
 
 // Default dev task
-gulp.task('default', ['html','js', 'css','style', 'open', 'watch']);
+gulp.task('default', ['html','js', 'css','images','style', 'open', 'watch']);
