@@ -1,44 +1,40 @@
 /**
  * Created by agomez40 on 03/09/2016.
  */
+'use strict';
 
-// Define JQuery as global, required by bootstrap
-$ = jQuery = require('jquery');
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+var Router = require('react-router').Router;
+var hashHistory = require('react-router').hashHistory;
+var Route = require('react-router').Route;
+var IndexRoute = require('react-router').IndexRoute;
 var Home = require('./components/homePage');
 var About = require('./components/about/about');
-var Header = require('./components/common/header');
 var Authors = require('./components/author/authorPage');
+var Header = require('./components/common/header');
 
-(function(win){
-    'use strict';
-
-    var App = React.createClass({
-        render: function(){
-            var Child;
-
-            switch (this.props.route){
-                case 'about': Child = About; break;
-                case 'authors': Child = Authors; break;
-                default: Child = Home;
-            }
-
-            return (
+var App = React.createClass({
+    render: function () {
+        return (
+            <div>
+                <Header />
                 <div>
-                    <Header />
-                    <Child />
+                    {this.props.children}
                 </div>
-            );
-        }
-    });
-
-    function render(){
-        var route = win.location.hash.substr(1);
-        ReactDOM.render(<App route={route} />, document.getElementById('app'));
+            </div>
+        );
     }
+});
 
-    win.addEventListener('hashchange', render);
-    render();
-})(window);
+ReactDOM.render(
+    ( <Router history={hashHistory}>
+            <Route path="/" component={App}>
+                <IndexRoute component={Home}/>
+                <Route path="about" component={About}/>
+                <Route path="authors" component={Authors}/>
+            </Route>
+
+        </Router>
+    ), document.getElementById('app'));
