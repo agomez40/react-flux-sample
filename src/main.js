@@ -6,15 +6,20 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+/* React Router imports */
 var Router = require('react-router').Router;
-var hashHistory = require('react-router').hashHistory;
+var browserHistory = require('react-router').browserHistory;
 var Route = require('react-router').Route;
 var IndexRoute = require('react-router').IndexRoute;
+
+/* App components */
 var Home = require('./components/homePage');
 var About = require('./components/about/about');
 var Authors = require('./components/author/authorPage');
 var Header = require('./components/common/header');
+var NotFoundPage = require('./components/404');
 
+// Main App component
 var App = React.createClass({
     render: function () {
         return (
@@ -28,13 +33,17 @@ var App = React.createClass({
     }
 });
 
-ReactDOM.render(
-    ( <Router history={hashHistory}>
-            <Route path="/" component={App}>
-                <IndexRoute component={Home}/>
-                <Route path="about" component={About}/>
-                <Route path="authors" component={Authors}/>
-            </Route>
+// App Route definitions
+var routes = (
+    <Router history={browserHistory}>
+        <Route path="/" component={App}>
+            <IndexRoute component={Home}/>
+            <Route path="about" component={About}/>
+            <Route path="authors" component={Authors}/>
+            <Route path="*" component={NotFoundPage} />
+        </Route>
+    </Router>
+);
 
-        </Router>
-    ), document.getElementById('app'));
+// Render the page
+ReactDOM.render(routes, document.getElementById('app'));

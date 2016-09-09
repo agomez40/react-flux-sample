@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5f29a8a-4b3d-4c7e-91cc-c4438d9b9b25" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/psadmin.iml" afterPath="$PROJECT_DIR$/.idea/psadmin.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/404.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/routes.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/author/authorList.js" afterPath="$PROJECT_DIR$/src/components/author/authorList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/author/authorPage.js" afterPath="$PROJECT_DIR$/src/components/author/authorPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/common/header.js" afterPath="$PROJECT_DIR$/src/components/common/header.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
     </list>
     <ignored path="psadmin.iws" />
@@ -35,38 +33,28 @@
       <file leaf-file-name="authorPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/author/authorPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="616">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorList.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authorList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/author/authorList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+            <state relative-caret-position="88">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="51" />
+            <state relative-caret-position="836">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -99,12 +87,13 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/api/authorApi.js" />
         <option value="$PROJECT_DIR$/src/api/authorData.js" />
-        <option value="$PROJECT_DIR$/src/components/common/header.js" />
         <option value="$PROJECT_DIR$/src/components/author/authorPage.js" />
         <option value="$PROJECT_DIR$/src/components/app.js" />
-        <option value="$PROJECT_DIR$/src/routes.js" />
-        <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/components/author/authorList.js" />
+        <option value="$PROJECT_DIR$/src/components/common/header.js" />
+        <option value="$PROJECT_DIR$/src/routes.js" />
+        <option value="$PROJECT_DIR$/src/components/404.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
       </list>
     </option>
   </component>
@@ -147,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -200,7 +190,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,7 +286,8 @@
       <updated>1472940422457</updated>
       <workItem from="1472940423731" duration="5770000" />
       <workItem from="1472954086054" duration="2100000" />
-      <workItem from="1473212312343" duration="4594000" />
+      <workItem from="1473212312343" duration="4622000" />
+      <workItem from="1473388260773" duration="1385000" />
     </task>
     <task id="LOCAL-00001" summary="chore(): gulp configuration">
       <created>1472941914851</created>
@@ -376,11 +366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472955843055</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refactor(): use react router for routing and navigation">
+      <created>1473216933100</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1473216933100</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12464000" />
+    <option name="totallyTimeSpent" value="13877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1936" height="2118" extended-state="0" />
@@ -428,13 +425,46 @@
     <MESSAGE value="fix(): create a fixed header for all pages" />
     <MESSAGE value="feat(): mock a backend API" />
     <MESSAGE value="refactor(): move author list to a Controller View" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(): move author list to a Controller View" />
+    <MESSAGE value="refactor(): use react router for routing and navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(): use react router for routing and navigation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/author/authorPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/author/authorList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/author/authorPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -500,9 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,20 +540,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/homePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="8" column="26" selection-start-line="4" selection-start-column="0" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -545,26 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/api/authorApi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
           <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -587,42 +588,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/app.js">
+    <entry file="file://$PROJECT_DIR$/src/components/author/authorPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="616">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="51" />
+        <state relative-caret-position="352">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
+    <entry file="file://$PROJECT_DIR$/src/components/common/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/author/authorPage.js">
+    <entry file="file://$PROJECT_DIR$/src/components/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="220">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/author/authorList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="88">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/404.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
           <folding />
         </state>
       </provider>
