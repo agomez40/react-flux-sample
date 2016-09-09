@@ -8,7 +8,7 @@ var ReactDOM = require('react-dom');
 
 /* React Router imports */
 var Router = require('react-router').Router;
-var browserHistory = require('react-router').browserHistory;
+var hashHistory = require('react-router').hashHistory;
 var Route = require('react-router').Route;
 var IndexRoute = require('react-router').IndexRoute;
 
@@ -18,6 +18,7 @@ var About = require('./components/about/about');
 var Authors = require('./components/author/authorPage');
 var Header = require('./components/common/header');
 var NotFoundPage = require('./components/404');
+var ManageAuthor = require('./components/author/manageAuthorPage');
 
 // Main App component
 var App = React.createClass({
@@ -35,11 +36,12 @@ var App = React.createClass({
 
 // App Route definitions
 var routes = (
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
             <Route path="about" component={About}/>
             <Route path="authors" component={Authors}/>
+            <Route path="author" component={ManageAuthor} />
             <Route path="*" component={NotFoundPage} />
         </Route>
     </Router>
