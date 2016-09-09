@@ -42,6 +42,7 @@ var routes = (
             <Route path="about" component={About}/>
             <Route path="authors" component={Authors}/>
             <Route path="author" component={ManageAuthor} />
+            <Route path="author/:id" component={ManageAuthor} />
             <Route path="*" component={NotFoundPage} />
         </Route>
     </Router>
